@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Poppins', ExtraBoldItalic;
+    font-weight: bold;
+    font-style: italic;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    background: rgb(34, 34, 68);
+}
+.attribution{
+    margin-top: 20px;
+}
+.interface{
+    width: 40%;
+    height: 80%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    background: white;
+    border-radius: 1rem 1rem 8rem 1rem;
+}
+
+.date-interface{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.date{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    color: gray;
+    font-size: 9px;
+    letter-spacing: 1.5px;
+}
+
+.date-input input{
+    width: 15%;
+    margin-left: 50px;
+    height: 50px;
+    font-size: large;
+    border: 1px gray;
+    padding: 0 10px;
+    cursor: pointer;
+    
+    
+    
+}
+
+/* .date-input input:nth-child(1){
+    border-bottom: 1px solid rgba(128, 128, 128, 0.199);
+    border-right: 1px solid rgba(128, 128, 128, 0.192);
+} */
+.date-input{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin-left: 50px; */
+}
+
+.btn{
+    position: absolute;
+    right: 50px;
+    top: 60%;
+    cursor: pointer;
+ 
+}
+
+.screen{
+    font-size: 50px;
+    color: blueviolet;
+    margin-top: 50px;
+    transform: translateX(-20px);
+   
+}
+@media(max-width:1150px){
+
+    .screen{
+        transform: translateY(50px);
+    }
+ .screen div{
+    font-size: 40px;
+ }
+
+ .screen span{
+    font-size: 40px;
+ }
+   
+ .btn{
+    right: 30%;
+ }
+
+ .date-interface{
+    transform: translateY(-50%);
+    
+ }
+
+ 
+
+}
+
+span{
+    font-size: 60px;
+font-weight: 800;
+font-style: italic;
+color: black;
+}
+
+.date-interface .date div:nth-child(2){
+    transform: translateX(-10px);
+}
+
+.date-interface .date div:nth-child(1){
+    transform: translateX(-10px);
+}
+
+.date-interface .date div:nth-child(3){
+    transform: translateX(-30px);
+}
+
+.btn{
+    width: 50px;
+    height: 50px;
+    background-color: blueviolet;
+    border-radius: 50%;
+    transform: translateY(-150px) translateX(-50px);
+    display: flex;
+    justify-content: center;
+
+    align-items: center;
+  
+}
+
+.btn img{
+    width: 25px;
+    height: 25px;
+    
+}
+
+.btn:hover{
+    background-color:#000000 ;
+}
+
+.year-result_box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.month-result_box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.days-result_box{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
